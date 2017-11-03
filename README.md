@@ -16,5 +16,5 @@ b64r13.pl - Benutzung/Usage:[perl] b64r13.pl [-e|-d] [-o] (quelldatei/source) [(
 ext(encode) = .b64.r13 (if no dest set)
 source ext .b64.r13 = action: decode
 ```
-Automatic name for destination-file on encrypting (if not set), recognize already packed file on extension and set automatic decrypting mode.
+Automatic name for destination-file on encrypting (if not set), recognize already packed file on extension and set automatic decrypting mode. Automatic cover file-extensions known for executables (*.exe; *.com; *.bat; *.cmd; *.zip) from being recognized by renaming them on encrypting and doing the reverse on decrypting. ( *.zi_ and so on )
 Requires a Perl installation. Works under Windows, possibly works under Linux with small changes; but this last was not tested.
