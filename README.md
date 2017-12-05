@@ -8,7 +8,7 @@ The help script (Perl) used under Windows to hide executables plain or packed in
 
 The help message states:
 ```
-b64r13.pl - Benutzung/Usage:[perl] b64r13.pl [-e|-d] [-o] (quelldatei/source) [(zieldatei/destination)]
+baserot.pl - Benutzung/Usage:[perl] baserot.pl [-e|-d] [-o] (quelldatei/source) [(zieldatei/destination)]
 -e       encode (default)
 -d       decode
 -o       overwrite existing
