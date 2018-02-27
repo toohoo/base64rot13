@@ -20,4 +20,4 @@ Automatic name for destination-file on encrypting (if not set), recognize alread
 Requires a Perl installation. Works under Windows, possibly works under Linux with small changes; but this last was not tested.
 
 ## base64rot47
-If someone needs a different rotation than ROT13 he can use this nearly equal script `baserot4`. The only difference is the rotation which is in concrete a ROT47 instead of a ROT13 here. If you're unsure what ROT47 is see [Wikipedia](https://en.wikipedia.org/wiki/Markdown).
+If someone needs a different rotation than ROT13 he can use this nearly equal script `baserot4`. The only difference is the rotation which is in concrete a ROT47 instead of a ROT13 here. If you're unsure what ROT47 is see [Wikipedia](https://en.wikipedia.org/wiki/ROT13#Variants).
