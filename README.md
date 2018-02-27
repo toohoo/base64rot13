@@ -4,7 +4,11 @@ A simple perl script to hide executables and other security issues in attachment
 **Attention**
 This is not really an encryption, it has no keys for crypting and the 2 transformations are well known world wide. It is only for covering it from security-risk scanners and email attachment scanners.
 
-The help script (Perl) used under Windows to hide executables plain or packed in zip-files in attachments out of the eyes of Gmail, which would deny the attachment if it would "see" it.
+The help script (Perl) used under Windows and Linux to hide executables plain or packed in zip-files in attachments out of the eyes of Gmail, which would deny the attachment if it would "see" it.
+
+Call `baserot`/`baserot4` on command line/shell.    
+
+For Linux change the home-dir of the pl-file in the shell script at line 7 in both `baserot`/`baserot4`.
 
 The help message states:
 ```

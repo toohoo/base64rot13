@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+# echo --- base64 Vorarbeit ---
+#set MYPATH_QUIET=On
+#export MYPATH_QUIET
+
+# echo --- base64 Script ---
+perl /net/nfs/vol010/ht00034165/old/temp/baserot4.pl "$@"

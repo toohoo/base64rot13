@@ -152,7 +152,7 @@ sub usage {
 	}
 	print "baserot.pl - Benutzung/Usage:\n";
 	print "[perl] baserot.pl [-e|-d] [-o] (quelldatei/source) [(zieldatei/destination)]\n";
-	print "-e 	 encode (default)\n-d 	 decode\n-o 	 overwrite existing\n-h|help	 diese Hilfe/this help\next(encode) = .b64.r13 (if no dest set)\nsource ext .b64.r13 = action: decode";
+	print "-e 	 encode (default)\n-d 	 decode\n-o 	 overwrite existing\n-h|help	 diese Hilfe/this help\next(encode) = .b64.r13 (if no dest set)\nsource ext .b64.r13 = action: decode\n";
 	exit(255);
 }
 sub abort {
