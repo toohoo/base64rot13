@@ -1,34 +1,43 @@
 #!/usr/bin/perl
 
+my $debug = undef;
+#$debug = 1;
+print "baserot.pl - #ARGV: $#ARGV \n" if $debug;
+
 if ( $#ARGV < 0 || $#ARGV > 2 ) {
+	print "#ARGV < 0 || #ARGV > 2 \n" if $debug;
 	usage();
 }
 
 use MIME::Base64;
 
-my $debug = undef;
-
 # Argumente/arguments ###############################
-print "... Prüfung Argumente\n" if $debug;
+print "... Pruefung Argumente\n" if $debug;
 my ( $opt, $ext ) = ( '-e', '.b64.r13' );
-if ( $ARGV[0] =~ m/-[ed]/ ) {
+if ( $ARGV[0] =~ m/^-[ed]/ ) {
+	print "...> ARGV[0] =~ /-[ed]/ \n" if $debug;
 	$opt = shift @ARGV;
 	$ext = '.b64.r13.decoded' if $opt eq '-d';
 }
 my ( $over ) = ( '' ); # -o
-if ( $ARGV[0] =~ m/-o/ ) {
+if ( $ARGV[0] =~ m/^-o/ ) {
+	print "...> ARGV[0] =~ /-o/ \n" if $debug;
 	$over = shift @ARGV;
 }
 if ( !$ARGV[0] ) {
+	print "!ARGV[0] \n" if $debug;
 	usage();
 }
 
+print "... before --help \n" if $debug;
 # help? / Quelle/Source #################################
 my $quelle = shift( @ARGV );
 if ($quelle =~ /^-(h|help|-help)$/i) {
+	print "--help \n" if $debug;
 	usage();
 }
 
+print "... before Dest \n" if $debug;
 # Ziel/Dest ###################################
 my $ziel = $quelle . $ext;
 if ( $ARGV[0] ) {
@@ -45,6 +54,8 @@ if ( !(-f $quelle) ) {
 
 my $name_without_b64 = '';
 my $name_without_b64_dec = '';
+
+print "... before correct extension \n" if $debug;
 # correct extension #########################
 print "... correct extension\n" if $debug;
 if ( $quelle =~ m/^(.*?)(\.b64.r13)$/i ) { # quelle/source = b64-encoded => decode
